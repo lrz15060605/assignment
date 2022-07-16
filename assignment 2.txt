@@ -1,0 +1,230 @@
+
+Assignment 2       (  Question 1 )
+
+
+#include<stdio.h>
+int main()
+{
+int x=25;
+ x=x%10;
+printf("unit is %d",x);
+return 0;
+}
+
+Question 2
+
+
+
+#include<stdio.h>
+int main()
+{
+int x=2565;
+ x=x/10;
+printf("unit is %d",x);
+return 0;
+}
+
+
+Question 3
+
+#include<stdio.h>
+int main()
+{
+int x=2,y=4;
+printf("x = %d and y = %d\n",x,y);
+int c;
+c=x;
+x=y;
+y=c;
+printf("x = %d and y = %d",x,y);
+return 0;
+}
+
+
+Question 4
+
+  #include<stdio.h>
+  int main()
+  {
+
+int a=2,b=4;
+printf(" a = %d and b = %d ",a,b);
+printf(" a = %d and b = %d ",b,a);
+
+return 0;
+
+  }
+  
+
+
+
+
+Question 5
+
+
+#include<stdio.h>
+int main()
+{
+int x;
+printf(" Enter the three digit number");
+scanf("%d",&x);
+int a,b,c;
+a=x/100;
+b=x%100/10;
+c=x%10;
+printf("sum of given three digits number is %d",a+b+c);
+
+return 0;
+
+
+}
+
+
+Question 6
+
+
+int main()
+{
+char c;
+printf("character ");
+scanf("%c",&c);
+int x=c;
+printf("value of %c is %d",c,x);
+return 0;
+
+
+}
+
+
+
+Question 8
+
+
+#include<stdio.h>
+int main()
+{
+int x;
+printf("enter the value");
+scanf("%d",&x);
+int y=x&(x%2);
+printf("value is %d",y);
+return 0;
+}
+
+
+Question 9
+
+
+#include<stdio.h>
+
+int main()
+{
+    int x;
+x=sizeof(float);
+
+printf("%d",x);
+return 0;
+
+
+}
+
+
+
+
+Question 10
+
+
+
+#include<stdio.h>
+int main()
+{
+  int x;
+  printf("enter the number");
+  scanf("%d",&x);
+  int y;
+  y=x%10;
+  x=(x-y);
+  printf(" x = %d ",x);
+  return 0;
+
+}
+
+
+Question 11
+
+
+
+#include<stdio.h>
+int main()
+{
+int x,y;
+printf(" Enter the number");
+scanf("%d%d",&x,&y);
+x=printf("%d%d",x,y);
+printf("%d",x);
+return 0;
+
+
+}
+
+
+
+Question 12
+
+
+  #include<stdio.h>
+  int main()
+  {
+int r;
+float d;
+printf(" Enter the amount in rupees");
+scanf("%d",&r);
+d= 1/76.23*r;
+printf(" The amount in rupees is %f",d);
+
+
+return 0;
+  
+}
+
+
+
+
+Question  13
+
+#include<stdio.h>
+int main()
+{
+
+int x;
+printf(" Enter the value ");
+scanf("%d",&x);
+x=x>>1;
+printf(" Value is %d",x);
+return 0;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
