@@ -1,0 +1,208 @@
+Assignment  - 5 
+
+Question - 1
+
+
+
+
+#include<stdio.h>
+int main()
+{
+    int x;
+   int  p=1;
+   printf("enter the number of times");
+   scanf("%d",&x);
+    while(p<=x)
+    {
+        printf("\nMySirG");
+        p++;
+    }
+    return 0;
+}
+
+
+
+
+Question  - 2
+
+
+
+
+#include<stdio.h>
+int main()
+{
+    int x;
+   int  p=1;
+   printf("enter the value");
+   scanf("%d",&x);
+    while(p<=x)
+    {
+        printf("%d ",p);
+        p++;
+    }
+    return 0;
+}
+
+
+
+
+Question -  3
+
+
+
+
+
+#include<stdio.h>
+int main()
+{
+    int x=1;
+   int  p;
+   printf("enter the value");
+   scanf("%d",&p);
+    while(p>=x)
+    {
+        printf("%d ",p);
+        p--;
+    }
+    return 0;
+}
+
+
+
+
+Question   - 5
+
+
+
+#include<stdio.h>
+int main()
+{
+    int x;
+   int  p=1;
+   printf("enter the value ");
+   scanf("%d",&x);
+   x=x*2;
+    while(p<=x)
+    {
+        printf("%d ",p);
+        p=(p+2);
+    }
+return 0;
+}
+
+
+
+Question  - 6
+
+
+
+
+#include<stdio.h>
+int main()
+{
+    int x;
+   int  p=2;
+   printf("enter the value");
+   scanf("%d",&x);
+   x=x*2;
+    while(p<=x)
+    {
+        printf("%d ",p);
+        p=(p+2);
+    }
+return 0;
+}
+
+
+
+Question  - 7 
+
+
+#include<stdio.h>
+int main()
+{
+    int x=2;
+   int  p;
+   printf("enter the value");
+   scanf("%d",&p);
+   p=p*2;
+    while(p>=x)
+    {
+        printf("%d ",p);
+        p=(p-2);
+    }
+return 0;
+}
+
+
+Question  - 8 
+
+
+
+
+#include<stdio.h>
+int main()
+{
+    int x;
+   int  p=1;
+   int s;
+   printf("enter the value");
+   scanf("%d",&x);
+    while(p<=x)
+    {
+        s=p*p;
+        printf("%d ",s);
+        p++;
+    }
+return 0;
+}
+
+
+
+Question - 9 
+
+
+
+
+
+
+#include<stdio.h>
+int main()
+{
+int x,p=1,s;
+printf("enter the value");
+scanf("%d",&x);
+while(p<=10)
+{
+s=p*p*p;
+printf(" %d ",s);
+p++;
+
+}
+return 0;
+}
+
+
+
+Question  - 10
+
+
+
+#include<stdio.h>
+int main()
+{
+int x=10,p=1,s,t;
+printf("enter the value");
+scanf("%d",&t);
+while(p<=10)
+{
+s=(t*p);
+printf(" %d ",s);
+p++;
+
+}
+return 0;
+}
+
+
+
