@@ -1,0 +1,325 @@
+Assignment  -  6
+
+
+Question  - 1 
+
+
+
+
+#include<stdio.h>
+int main()
+{
+    int x,s=0,p;
+    printf("enter the value ");
+    scanf("%d",&x);
+    for(p=1;p<=x;p++)
+    {
+        s=s+p;
+        printf("%d ",p);
+    }
+    printf("\nsum is %d",s);
+    return 0;
+}
+
+
+
+Question  - 2 
+
+
+
+
+
+#include<stdio.h>
+int main()
+{
+    int x,s=0,p;
+    printf("enter the value ");
+    scanf("%d",&x);
+    x=x*2;
+    for(p=2;p<=x;p=p+2)
+    {
+        s=s+p;
+        printf("%d ",p);
+    }
+    printf("\nsum is %d",s);
+    return 0;
+}
+
+
+
+Question  - 3 
+
+
+
+#include<stdio.h>
+int main()
+{
+    int x,s=0,p;
+    printf("enter the value ");
+    scanf("%d",&x);
+    x=x*2;
+    for(p=1;p<=x;p=p+2)
+    {
+        s=s+p;
+        printf("%d ",p);
+    }
+    printf("\nsum is %d",s);
+    return 0;
+}
+
+
+Question - 4
+
+
+#include<stdio.h>
+int main()
+{
+    int x,s=0,p,m;
+    printf("enter the value ");
+    scanf("%d",&x);
+    
+    for(p=1;p<=x;p++)
+    {
+        m=p*p;
+       printf("%d ",m);
+        s=s+m;
+       
+    }
+    printf("\nsum is %d",s);
+    return 0;
+}
+
+
+Question - 5 
+
+
+
+#include<stdio.h>
+int main()
+{
+    int x,s=0,p,m;
+    printf("enter the value ");
+    scanf("%d",&x);
+    
+    for(p=1;p<=x;p++)
+    {
+        m=p*p*p;
+       printf("%d ",m);
+        s=s+m;
+       
+    }
+    printf("\nsum is %d",s);
+    return 0;
+}
+
+
+Question  - 6
+
+
+#include<stdio.h>
+int main()
+{
+    int x,f;
+    printf("enter the value");
+    scanf("%d",&x);
+    f=1;
+    for(x;x>=1;x--)
+    {
+        f=f*x;
+
+    }
+    printf("factorial is %d",f);
+    return 0;
+}
+
+
+ 
+Question   7
+
+
+
+#include<stdio.h>
+int main()
+{
+    int x,p,a;
+    printf("enter the value ");
+    scanf("%d",&x);
+    for(p=1;x!=0;p++)
+    {
+        a=x%10;
+        x=x/10;
+    }
+    printf("%d",p-1);
+    return 0;
+}
+
+
+
+
+Question  - 8 
+
+
+
+#include<stdio.h>
+int main()
+{
+    int x,p=2;
+    printf("enter the number ");
+    scanf("%d",&x);
+    while(p<x)
+    {
+        if(x%p==0)
+        {
+         printf("not a prime ");
+         break;   
+        }
+        else
+        {
+            p++;
+        }
+    }
+    if(p==x)
+    {
+    printf("yes a prime number");
+    }
+    return 0;
+}
+
+
+second possibility by for loop: 
+
+
+
+#include<stdio.h>
+int main()
+{
+    int x,p;
+    printf("enter the number ");
+    scanf("%d",&x);
+    for(p=2;p<x;p++)
+    {
+        if(x%p==0)
+        {
+            break;
+        }
+    }
+    if(p==x)
+    {
+        printf("prime number");
+    }
+    else
+    {
+        printf("not a prime number");
+    }
+    
+    return 0;
+}
+
+
+
+Question - 9
+
+
+
+
+
+
+
+
+
+#include<stdio.h>
+int main()
+{
+    int x,y,p=2;
+    printf("enter the number ");
+    scanf("%d%d",&x,&y);
+    while(p<x*y)
+    {
+        if(p%x==0&&p%y==0)
+        {
+           
+            break;
+        }
+        else
+        {
+            p++;
+        }
+    } 
+    
+    
+        printf("lcm is %d",p);
+    
+
+    return 0;
+}
+
+
+
+other way of doing by for loop
+
+
+
+#include<stdio.h>
+int main()
+{
+    int x,y,l;
+    printf("enter the number ");
+    scanf("%d%d",&x,&y);
+    for(l=1;l<=x*y;l++)
+    {
+        if((l%x==0)&&(l%y==0))
+        {
+            break;
+        }
+    }
+     printf("%d",l);
+    
+    return 0;
+}
+
+
+
+Question  - 10
+
+
+
+
+#include<stdio.h>
+int main()
+{
+    int x,a,r=0;
+    printf("enter the value ");
+    scanf("%d",&x);
+    while(x!=0)
+    {
+        a=x%10;
+        x=x/10;
+        r=r*10+a;
+    }
+    printf("reverse is %d",r);
+    return 0;
+}
+
+
+
+another way by for loop
+
+
+
+
+#include<stdio.h>
+int main()
+{
+   int  x,a,y=0;
+    printf("enter the value ");
+    scanf("%d",&x);
+    for(;x!=0;)
+    {
+        a=x%10;
+        y=y*10+a;
+        x=x/10;
+    }
+    printf("reverse is %d",y);
+    return 0;
+}
+
