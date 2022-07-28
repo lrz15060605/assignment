@@ -1,0 +1,306 @@
+Assignment - 7 
+
+
+Question  - 1 
+
+
+#include<stdio.h>
+int main()
+{
+    int n,a=-1,b=1,i,c;
+    printf("enter the nth term ");
+    scanf("%d",&n);
+    for(i=1;i<=n;i++)
+    {
+        c=a+b;
+        a=b;
+        b=c;
+    }
+    printf("nth term is %d",c);
+    return 0;
+}
+
+
+Question - 2 
+
+
+#include<stdio.h>
+int main()
+{
+    int n,a=-1,b=1,i,c;
+    printf("enter the nth term ");
+    scanf("%d",&n);
+    for(i=1;i<=n;i++)
+    {
+        c=a+b;
+        printf("%d ",c);
+        a=b;
+        b=c;
+    
+    }
+    return 0;
+}
+
+
+Question  - 3
+
+
+
+#include<stdio.h>
+int main()
+{
+    int n,a=-1,b=1,i,c;
+    printf("enter the nth term ");
+    scanf("%d",&n);
+    for(i=1;1;i++)
+    {
+        c=a+b;
+        a=b;
+        b=c;
+        if(n==c)
+         {
+            printf("number found");
+            break;
+         }
+         else
+         {
+         if(c>n)
+         {
+            printf("not found");
+            break;
+         }
+         } 
+    }
+   
+    return 0;
+}
+  
+
+
+
+Question  - 4
+
+
+
+#include<stdio.h>
+int main()
+{
+    int x,y,hcf;
+    printf("enter the two number ");
+    scanf("%d%d",&x,&y);
+    if(x<y)
+    hcf=x;
+    else
+    hcf=y;
+    for(hcf;hcf>=1;hcf--)
+    {
+        if(x%hcf==0&&y%hcf==0)
+        break;
+    }
+    printf("%d",hcf);
+    return 0;
+}
+
+Question  - 5
+
+
+#include<stdio.h>
+int main()
+{
+    int x,y,p,a;
+    printf("enter the value");
+    scanf("%d%d",&x,&y);
+    if(x<y)
+    a=x;
+    else
+    a=y;
+    for(p=2;p<=a;p++)
+    {
+        if(x%p==0&&y%p==0)
+        {
+            printf("not a co prime ");
+            break;
+        }
+    }
+    if(p==a+1)
+    {
+        printf("co prime number");
+    }
+    
+    return 0;
+}
+
+
+
+Question - 6 
+
+
+
+
+#include<stdio.h>
+int main()
+{
+    int a,b,x;
+    printf("enter the number ");
+    scanf("%d",&x);
+   
+    for(a=2;a<x;a++)
+    {
+        for(b=2;b<a;b++)
+        {
+            if(a%b==0)
+            break;
+        }
+        if(a==b)
+        {
+            printf("%d ",b);
+        }
+    }
+    return 0;
+}
+
+
+
+Question - 7
+
+
+
+
+#include<stdio.h>
+int main()
+{
+    int y,x,a;
+    printf("enter the number ");
+    scanf("%d%d",&x,&y);
+   
+    for(x;x<y;x++)
+    {
+        for(a=2;a<x;a++)
+        {
+            if(x%a==0)
+            break;
+        }
+        if(a==x)
+        {
+            printf("%d ",x);
+        }
+    }
+    return 0;
+}
+
+
+
+Question  - 8 
+
+
+
+
+
+#include<stdio.h>
+int main()
+{
+    int x,a;
+    printf("enter the value");
+    scanf("%d",&x);
+    for(x;1;x++)
+    {
+        for(a=2;a<x;a++)
+        {
+            if(x%a==0)
+            {
+              break;
+            }
+        }
+        if(a==x)
+        {
+          {
+            printf("%d",x);
+            break;
+          }
+        }
+    }
+    return 0;
+}
+
+
+Quiestion  - 9 
+
+
+
+
+
+#include<stdio.h>
+int main()
+{
+    int y,n,a,sum;
+    printf(" armstrong number is \n");
+    scanf("%d",&n);    
+    for(;1;)
+    {
+        sum=0;
+        y=n;
+        for(;y!=0;)
+        {
+        a=y%10;
+        sum=sum+(a*a*a);
+        y=y/10;
+        }
+    
+    if(sum==n)
+    {
+             printf(" %d is an  armstrong number\n",n);
+             break;
+    }
+    else
+    {
+        printf(" %d is not an amstrong number ",n);
+        break;
+    }
+    }
+    return 0;
+}
+
+
+
+
+
+
+Question  - 10 
+
+
+
+#include<stdio.h>
+int main()
+{
+    int y,n,a,sum;
+    printf(" armstrong number is \n");
+    
+    for(n=1;n<=1000;n++)
+    {
+        sum=0;
+        y=n;
+        for(;y!=0;)
+        {
+        a=y%10;
+        sum=sum+(a*a*a);
+        y=y/10;
+        }
+    
+    if(sum==n)
+    {
+        printf(" %d\n",n);
+    }
+    }
+    return 0;
+}
+
+
+
+
+
+
+
+
+
+
+
