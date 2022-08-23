@@ -1,0 +1,692 @@
+Assignment   -   8
+
+
+Question  - 1 
+
+
+
+
+#include<stdio.h>
+int main()
+{
+    int r,c;
+    int x,y;
+    //int n;
+    printf("enter the rows and coloums:-");
+    scanf("%d%d",&x,&y);
+    for(r=1;r<=x;r++)
+    {
+        //n=65;
+        for(c=1;c<=y;c++)
+        {
+            
+            if(c<=r)
+            {
+                printf("*");
+                //n++;
+            }
+            else
+            {
+                printf(" ");
+            }
+        }
+        printf("\n");
+    }
+    
+    return 0;
+}
+
+
+
+Question   - 2 
+
+
+
+
+#include<stdio.h>
+int main()
+{
+    int r,c;
+    int x,y;
+    //int n;
+    printf("enter the rows and coloums:-");
+    scanf("%d%d",&x,&y);
+    for(r=1;r<=x;r++)
+    {
+        //n=65;
+        for(c=1;c<=y;c++)
+        {
+            
+            if(c>=6-r)
+            {
+                printf("*");
+                //n++;
+            }
+            else
+            {
+                printf(" ");
+            }
+        }
+        printf("\n");
+    }
+    
+    return 0;
+}
+
+
+
+Question  - 3
+
+
+
+
+
+#include<stdio.h>
+int main()
+{
+    int r,c;
+    int x,y;
+    //int n;
+    printf("enter the rows and coloums:-");
+    scanf("%d%d",&x,&y);
+    for(r=1;r<=x;r++)
+    {
+        //n=65;
+        for(c=1;c<=y;c++)
+        {
+            
+            if(c<=6-r)
+            {
+                printf("*");
+                //n++;
+            }
+            else
+            {
+                printf(" ");
+            }
+        }
+        printf("\n");
+    }
+    
+    return 0;
+}
+
+
+Question  - 4 
+
+
+
+
+
+#include<stdio.h>
+int main()
+{
+    int r,c;
+    int x,y;
+    //int n;
+    printf("enter the rows and coloums:-");
+    scanf("%d%d",&x,&y);
+    for(r=1;r<=x;r++)
+    {
+        //n=65;
+        for(c=1;c<=y;c++)
+        {
+            
+            if(c>=r)
+            {
+                printf("*");
+                //n++;
+            }
+            else
+            {
+                printf(" ");
+            }
+        }
+        printf("\n");
+    }
+    
+    return 0;
+}
+
+
+
+Question  - 5 
+
+
+
+#include<stdio.h>
+int main()
+{
+    int r,c;
+  
+    for(r=1;r<=5;r++)
+    {
+        for(c=1;c<=9;c++)
+        {
+            
+            if((c>=6-r)&&(c<=4+r))
+            {
+                
+                printf("*");
+                
+            }
+            else
+            {
+                printf(" ");
+            }
+        }
+        printf("\n");
+    }
+    
+    return 0;
+}
+
+
+Question - 6 
+
+
+
+#include<stdio.h>
+int main()
+{
+    int i,j,k;
+    for(i=1;i<=5;i++)
+    {
+        
+        for(j=1;j<=9;j++)
+        {
+            
+            if(j>=i&&j<=10-i)
+            {
+            printf("*");
+            
+            }
+            else
+            {
+                printf(" ");
+               
+            }
+        }
+        printf("\n");
+    }
+    return 0;
+}
+
+
+
+Question - 7 
+
+
+
+#include<stdio.h>
+int main()
+{
+    int i,j,k;
+    for(i=1;i<=5;i++)
+    {
+        
+        for(j=1;j<=9;j++)
+        {
+            
+            if(j<=6-i||j>=4+i)
+            {
+            printf("*");
+            
+            }
+            else
+            {
+                printf(" ");
+               
+            }
+        }
+        printf("\n");
+    }
+    return 0;
+}
+
+
+Question  - 8 
+
+
+
+
+#include<stdio.h>
+int main()
+{
+    int i,j,k;
+    for(i=1;i<=4;i++)
+    {
+        k=1;
+        
+        for(j=1;j<=7;j++)
+        
+        {
+            
+            if(j>=5-i&&j<=3+i)
+            {
+                
+            printf("%d",k);
+            if(j<4)
+            {
+                k++;
+            }
+            else
+            {
+                
+                k--;
+            }
+            
+            }
+            else
+            {
+                printf(" ");
+               
+            }
+        }
+        printf("\n");
+    }
+    return 0;
+}
+
+
+
+Question - 9 
+
+
+
+#include<stdio.h>
+int main()
+{
+    int i,j,k;
+    for(i=1;i<=4;i++)
+    {
+        k=1;
+        for(j=1;j<=7;j++)
+        {
+            if(j>=i&&j<=8-i)
+            {
+                printf("%d",k);
+              if(j<4)
+              {
+                k++;
+              }
+              else
+              {
+                k--;
+              }
+            }
+            else
+            {
+                printf(" ");
+            }
+        }
+        printf("\n");
+    }
+    return 0;
+}
+
+
+
+
+
+Question  - 10 
+
+
+
+
+
+#include<stdio.h>
+int main()
+{
+    int i,j,k;
+    //char k;
+    for(i=1;i<=4;i++)
+    {
+        k=1;
+        for(j=1;j<=7;j++)
+        {
+          if(j<=5-i||j>=3+i)
+          {
+            printf("%d",k);
+            if(j<4)
+            {
+                k++;
+            }
+            else
+            {
+               
+               k--;
+               
+            }
+            
+          }
+          else
+          {
+            printf(" ");
+           if(j==4)
+           {
+             k--;
+           }
+          }
+        }
+        printf("\n");
+    }
+    return 0;
+}
+
+
+Question - 11
+
+
+
+
+#include<stdio.h>
+int main()
+{
+    int i,j;
+    char k;
+    for(i=1;i<=5;i++)
+    {
+        k='A';
+        for(j=1;j<=9;j++)
+        {
+            if(j>=6-i&&j<=4+i)
+            {
+                printf("%c",k);
+              if(j<5)
+              {
+                k++;
+              }
+              else
+              {
+                k--;
+              }
+            }
+            else
+            {
+                printf(" ");
+            }
+        }
+        printf("\n");
+    }
+    return 0;
+}
+
+
+
+Question - 12
+
+
+
+
+#include<stdio.h>
+int main()
+{
+    int i,j;
+    char k;
+    for(i=1;i<=4;i++)
+    {
+        k='A';
+        for(j=1;j<=7;j++)
+        {
+            if(j>=i&&j<=8-i)
+            {
+                printf("%c",k);
+              if(j<4)
+              {
+                k++;
+              }
+              else
+              {
+                k--;
+              }
+            }
+            else
+            {
+                printf(" ");
+            }
+        }
+        printf("\n");
+    }
+    return 0;
+}
+
+
+Question  - 13
+
+
+
+
+#include<stdio.h>
+int main()
+{
+    int i,j;
+    char k;
+    for(i=1;i<=7;i++)
+    {
+        k='A';
+        for(j=1;j<=13;j++)
+        {
+            if(j<=8-i||j>=6+i)
+            {
+                printf("%c",k);
+               if(j<7)
+                {
+                    k++;
+                }
+                else
+                {
+                    k--;
+                }
+            }
+            else
+            {
+                printf(" ");
+                if(j==7)
+                {
+                    k--;
+                }
+            }
+        }
+        printf("\n");
+    }
+    return 0;
+}
+
+
+Question - 14
+
+
+
+
+#include<stdio.h>
+int main()
+{
+   int i,j,r;
+   printf("Enetr the value :- ");
+   scanf("%d",&r);
+   for(i=1;i<=r;i++)
+   {
+    for(j=1;j<=r;j++)
+    {
+      if(i<=r&&j==1||i==r&&j<=r||i>=2&&i<=r-1&&j==i)
+      {
+        printf("*");
+      }
+      else
+      {
+        printf(" ");
+      }
+    }
+    printf("\n");
+   }
+   return 0;
+}
+
+
+
+Question -15 
+
+
+
+
+
+#include<stdio.h>
+int main()
+{
+   int i,j,k=4,r;
+   printf("Enetr the value :- ");
+   scanf("%d",&r);
+   for(i=1;i<=r;i++)
+   {
+    for(j=1;j<=r;j++)
+    {
+      if(i==r&&j>=1||j==r&&j>=1||i>=2&&j==r+1-i||i<=r-1&&j==r+1-i)
+      {
+        printf("*");
+      }
+      else
+      {
+        printf(" ");
+      }
+    }
+    printf("\n");
+   }
+   return 0;
+}
+
+
+
+
+Question - 16
+
+
+
+
+#include<stdio.h>
+int main()
+{
+   int i,j,k=4,r,a;
+   printf("Enetr the value :- ");
+   scanf("%d",&r);
+   //j=r+1;
+   //r==j;
+   for(i=1;i<=r;i++)
+   {
+    for(j=1;j<=2*r-1;j++)
+    {
+      
+      if(i==r&&j>=1||i==1&&j==(2*r-1)/2+1||i>=2&&j==r-1+i  ||i<=r-1&&j==r-1+i|| i>1&&j==r+1-i||i<r&&j==r+1-i)
+      {
+         printf("*");    
+      }
+      else
+      {
+        printf(" ");
+      }
+    }
+    printf("\n");
+   }
+   return 0;
+}
+
+
+
+Question  - 17
+
+
+
+#include<stdio.h>
+int main()
+{
+   int i,j,k=4,r,a;
+   printf("Enetr the value :- ");
+   scanf("%d",&r);
+   //j=r+1;
+   //r==j;
+   for(i=1;i<=r;i++)
+   {
+    for(j=1;j<=2*r-1;j++)
+    {
+      
+      if(i==1&&j>=1||i>=2&&j==i||i<=r-1&&j==i||i>1&&j==2*r-i||i<r&&j==2*r-i)
+      {
+         printf("*");    
+      }
+      else
+      {
+        printf(" ");
+      }
+    }
+    printf("\n");
+   }
+   return 0;
+}
+
+
+
+Question - 18
+
+
+
+#include<stdio.h>
+int main()
+{
+    
+    int n,i,j,k=0,rows;
+    printf("Enter the rows:- ");
+    scanf("%d",&rows);
+    n=(rows+1)/2;
+    for(i=1;i<=rows;i++)
+    {
+        if(rows%2==0)
+        {
+         if(i<=n)
+         {
+            k++;
+         }
+         else
+         {
+            if(i>n+1)
+            {
+                k--;
+            }
+         }   
+        }
+        else
+        {
+          if(i<=n)
+          {
+            k++;
+          }
+          else
+          {
+            k--;
+          }
+        }
+        for(j=1;j<=rows;j++)
+        {
+
+            if(j>=(n+1)-k&&j<=(n-1)+k)
+            {
+                printf("*");
+            }
+            else
+            {
+                printf(" ");
+            }
+        }
+        
+        printf("\n");
+    }
+     return 0;
+}
+
+
+Question - 19
+
+
+
+
+
+
