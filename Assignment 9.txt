@@ -1,0 +1,425 @@
+Assignment  9 
+
+Question  1 
+
+
+
+#include<stdio.h>
+#include<stdlib.h>
+int main()
+{
+  int x;
+  for(;1;)
+  {
+  printf("\n Eneter the month number:- ");
+  scanf("%d",&x);
+  switch(x)
+  { 
+      case 1:
+         printf("31 days ");
+         break;
+
+         case 3:
+         printf("31 days ");
+         break;
+
+          case 5:
+         printf("31 days ");
+         break;
+          case 7:
+         printf("31 days ");
+         break;
+          case 8:
+         printf("31 days ");
+         break;
+          case 10:
+         printf("31 days ");
+         break;
+          case 12:
+         printf("31 days ");
+         break;
+         
+      case 4:
+         printf("30 Days ");
+         break;
+         case 6:
+         printf("30 Days ");
+         break;
+         case 9:
+         printf("30 Days ");
+         break;
+         case 11:
+         printf("30 Days ");
+         break;
+      case 2:
+         printf("28/29 Days ");
+         break;
+        default:
+         exit(0);   
+  }
+  }
+  return 0;
+}
+
+
+
+Question  2 
+
+
+
+
+#include<stdio.h>
+int main()
+{
+  int x,a,b;
+  printf("\n1- Addition :-\n2- Substraction :-\n3- Multiplication :-\n4- Division :- \n5- Exit :- ");
+  printf("Enter the choise :- ");
+  scanf("%d",&x);
+  switch(x)
+  {
+    case 1:
+    printf("enter the two numbers:- ");
+    scanf("%d%d",&a,&b);
+    printf("sum is %d",a+b);
+    break;
+    case 2:
+    printf("enter the two numbers:- ");
+    scanf("%d%d",&a,&b);
+    printf("difference is %d",a-b);
+    break;
+    case 3:
+    printf("enter the two numbers:- ");
+    scanf("%d%d",&a,&b);
+    printf("product is %d",a*b);
+    break;
+    case 4:
+    printf("enter the two numbers:- ");
+    scanf("%d%d",&a,&b);
+    printf("division %d",a/b);
+    break;
+  }
+  return 0;
+}
+
+
+Question  3 
+
+
+
+#include<stdio.h>
+int main()
+{
+  int x;
+  printf("Enter the day number:- ");
+  scanf("%d",&x);
+  switch(x)
+  {
+    case 1:
+    printf("Welcome Today is Monday");
+    break;
+    case 2:
+    printf("Welcome Today is Tuesday");
+    break;
+    case 3:
+    printf("Welcome Today is Wednesdy");
+    break;
+    case 4:
+    printf("Welcome Today is Thrusday");
+    break;
+    case 5:
+    printf("Welcome Today is Friday");
+    break;
+    case 6:
+    printf("Welcome Today is saturday");
+    break;
+    case 7:
+    printf("Welcome Today is Sunday");
+    break;
+    default :
+    printf("You have enter the invalid day number");
+  }
+  return 0;
+}
+
+
+
+
+
+
+Question 4 
+
+
+
+#include<stdio.h>
+#include<stdlib.h>
+int main()
+{
+  int x,y,z,c;
+  for(;1;)
+  {
+  printf("\n1:-check the isolocious triangle\n2:-check the equlaterial triangle\n3:-right angle triangle\n4:- Exit\n ");
+  printf("Enetr the choice :- ");
+  scanf("%d",&c);
+  
+  switch(c)
+  {
+    case 1:
+    printf("Enter the side of the triangle:- ");
+    scanf("%d%d%d",&x,&y,&z);
+    if(x==y||y==z)
+    {
+      printf("Yes it is an isocolous triangle");
+    }
+    else
+    {
+      printf("NO its not an isolocous Triangle");
+    }
+    break;
+    case 2:
+    printf("Enter the side of the triangle:- ");
+    scanf("%d%d%d",&x,&y,&z);
+    if(x==y&&y==z&&x==z)
+    {
+      printf("Yes it is an equaliteral triangle");
+    }
+    else
+    {
+      printf("NO its not an equaliteral Triangle");
+    }
+    break;
+    case 3:
+    printf("Enter the side of the triangle:- ");
+    scanf("%d%d%d",&x,&y,&z);
+    if(x*x+y*y==z*z||y*y+z*z==x*x||z*z+x*x==y*y)
+    {
+      printf("Yes it is an right angle triangle");
+    }
+    else
+    {
+      printf("NO its not an right angle triangle");
+    }
+    break;
+    case 4:
+    exit(0);
+  }
+  }
+  return 0;
+}
+
+
+Question  5 
+
+
+
+
+#include<stdio.h>
+
+  int main()
+  {
+    int x;
+    printf("Enter the number:- ");
+    scanf("%d",&x);
+    switch(x)
+    {
+      case 1:
+      printf("good");
+      break;
+      case 2:
+      printf("better");
+      break;
+      case 3:
+      printf("best");
+      break;
+      default :
+      printf("invalid \nenter the number between 1 to 3 ");
+    }
+    return 0;
+  }
+
+
+
+Question  6  
+
+
+
+#include<stdio.h>
+int main()
+{
+  int y;
+  printf("Enter the year:- ");
+  scanf("%d",&y);
+  switch(y%100==0)
+  {
+    case 1:
+             switch(y%400==0)
+             {
+                case 1:
+                 printf("Yes it is a Leap year");
+                 break;
+
+                case 0:
+                 printf(" No it is a Leap year");
+                 break;
+             }
+             break;
+     case 0:
+             switch(y%4==0)
+             {
+              case 1:
+               printf("Yes it is a Leap year");
+               break;
+               case 0:
+               printf("No  it is a Leap year");
+               break;
+             }
+             break;
+
+  }
+  return 0;
+}
+
+
+
+Question  7 
+
+
+
+#include<stdio.h>
+int main()
+{
+  int x;
+ float total,amount;
+  printf("Eneter your Electricity unit:- ");
+  scanf("%d",&x);
+  switch(x<=50)
+  {
+    case 1:
+    amount= x*0.50;
+    break;
+    case 0:
+           switch(x<150)
+           {
+            case 1:
+            amount= 25+(x-50)*0.75;
+            break;
+            case 0:
+                  switch(x<=250)
+                  {
+                    case 1:
+                    amount= 100+(x-100)*0.20;
+                    break;
+                    case 0:
+                         switch(x>250)
+                         {
+                          case 1:
+                          amount= 220+(x-250)*1.50;
+                          break;
+                         }
+                         break;
+                  }
+                  break;
+           }
+           break;
+
+  }
+  total=amount+amount*0.20;
+  printf("Total Electricity bill is %f",total);
+  
+  return 0;
+}
+
+
+
+
+Question  8  
+
+
+#include<stdio.h>
+int main()
+{
+  int x;
+  printf("Enter the number:- ");
+  scanf("%d",&x);
+  switch(x>=1)
+  {
+    case 1:
+    printf("%d",x*-1);
+    break;
+    case 0:
+            switch(x<0)
+            {
+              case 1:
+              printf("%d",x*-1);
+              break;
+            }
+            break;
+  }
+  return 0;
+}
+
+
+
+Question  9 
+
+
+
+#include<stdio.h>
+int main()
+{
+  int x;
+  printf("Enter the number:- ");
+  scanf("%d",&x);
+  switch(x%2==0)
+  {
+    case 1:
+    printf("%d",x+1);
+    break;
+    case 0:
+    printf("%d",x);
+     break;        
+  }
+  return 0;
+}
+
+
+
+Question  10  
+
+
+#include<stdio.h>
+#include<math.h>
+int main()
+{
+    int a,b,c,d;
+    float x,y;
+    printf("Enter the value of a b and c:- ");
+    scanf("%d%d%d",&a,&b,&c);
+    d=b*b-4*a*c;
+    switch(d<0)
+    {
+        case 1:
+        printf("Imagenier roots");
+        break;
+        case 0:
+           switch(d==0)
+           {
+               case 1:
+                  x=-b/(2.0*a);
+                  printf("Equal Roots %f ",x);
+                  break;
+               case 0:
+                   switch(d>0)
+                   {
+                       case 1:
+                          x=(-b+sqrt(d))/(2*a);
+                          y=(-b-sqrt(d))/(2*a);
+                          printf(" Real and Distinct Roots %f ,%f",x,y);
+                          break;
+                   }
+                   break;
+           }
+           break;
+    }
+return 0;
+}
+
