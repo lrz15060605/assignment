@@ -1,0 +1,340 @@
+Assignment  11
+
+
+Question 1
+
+
+
+#include<stdio.h>
+int lcm(int,int);
+int main()
+{
+  int x,y;
+  printf("ENter the two number:- ");
+  scanf("%d%d",&x,&y);
+  printf("Lcm is %d ",lcm(x,y));
+  return 0;
+}
+int lcm(int a,int b)
+{
+    int lcm;
+    for(lcm=a>b?a:b;lcm<=a*b;lcm++)
+    {
+        if(lcm%a==0&&lcm%b==0)
+        {
+            return (lcm);
+        }
+    }
+}
+
+
+
+
+
+Question 2
+
+
+#include<stdio.h>
+int hcf(int,int);
+int main()
+{
+  int x,y;
+  printf("ENter the two number:- ");
+  scanf("%d%d",&x,&y);
+  printf("hcf is %d ",hcf(x,y));
+  return 0;
+}
+int hcf(int a,int b)
+{
+    int hcf;
+    for(hcf=a<b?a:b;hcf>=1;hcf--)
+    {
+        if(a%hcf==0&&b%hcf==0)
+        {
+            return (hcf);
+        }
+    }
+}
+
+
+
+Question  3
+
+
+
+
+#include<stdio.h>
+int prime(int);
+int main()
+{
+  int x;
+  printf("Enetr the number:- ");
+  scanf("%d",&x);
+  prime(x);
+  return 0;
+}
+int prime(int a)
+{
+    int i;
+    for(i=2;i<a;i++)
+    {
+        if(a%i==0)
+        break;
+    }
+    if(i==a)
+    {
+        printf("prime number");
+    }
+    else
+    {
+        printf("NO not an prime ");
+    }
+}
+
+
+
+
+Question  4
+
+
+
+
+#include<stdio.h>
+int nextprime(int);
+int main()
+{
+  int x;
+  printf("Enetr the number:- ");
+  scanf("%d",&x);
+  printf("%d",nextprime(x));
+  return 0;
+}
+int nextprime(int a)
+{
+  int x,i;
+  for(x=a+1;x>1;x++)
+  {
+    for(i=2;i<x;i++)
+    {
+      if(x%i==0)
+      {
+        break;
+      }
+    }
+    if(i==x)
+    {
+      return (x);
+    
+    }
+  }
+}
+
+
+
+
+
+Question  5
+
+
+
+
+#include<stdio.h>
+int primebet(int);
+int main()
+{
+   int x;
+   printf("Enetr the two numbers:- ");
+   scanf("%d",&x);
+   primebet(x);
+   return 0;
+}
+int primebet(int a)
+{
+  int x,i;
+  for(x=2;a!=0;x++)
+  {
+    for(i=2;i<x;i++)
+    {
+      if(x%i==0)
+      break;
+    }
+    if(i==x)
+    {
+       printf("%d ",x);
+      a--;
+    }
+    
+}
+}
+
+
+Question 6  
+
+
+
+#include<stdio.h>
+int primebet(int,int);
+int main()
+{
+   int x,y;
+   printf("Enetr the two numbers:- ");
+   scanf("%d%d",&x,&y);
+   primebet(x,y);
+   return 0;
+}
+int primebet(int a,int b)
+{
+  int x,i;
+  for(x=a+1;x<=b-1;x++)
+  {
+    for(i=2;i<x;i++)
+    {
+      if(x%i==0)
+      break;
+    }
+    if(i==x)
+    {
+       printf("%d ",x);
+      
+    }
+}
+}
+
+
+
+Question  7
+
+
+
+#include<stdio.h>
+int fabnooic(int);
+int main()
+{
+  int x;
+  printf("Enetr the number:- ");
+  scanf("%d",&x);
+  fabnooic( x);
+  return 0; 
+}
+int fabnooic(int n)
+{
+  int a,b,c,i;
+  a=-1;
+  b=1;
+  for(i=1;i<=n;i++)
+  {
+   
+    c=a+b;
+    printf("%d ",c);
+    a=b;
+    b=c;
+  }
+}
+
+
+Question  8
+
+#include<stdio.h>
+int factr(int);
+int combi(int,int);
+void printpascal(int);
+int main()
+{
+  int x;
+  printf("Enetr the number:- ");
+  scanf("%d",&x);
+  printpascal(x);
+  return 0;
+}
+int factr(int n)
+{
+    int a=1;
+    for(n;n!=0;n--)
+    {
+        a=a*n;
+    }
+    return (a);
+}
+int combi(int n,int r)
+{
+    return (factr(n)/(factr(n-r)*factr(r)));
+}
+void printpascal(int n)
+{
+   int i,j,k,r;
+   for(i=1;i<=n;i++)
+   {
+    k=1;
+    r=0;
+      for(j=1;j<=2*n-1;j++)
+      {
+        if(j>=n+1-i && j<=n-1+i && k)
+        {
+           printf("%2d",combi(i-1,r));
+           k=0;
+           r++;
+        }
+        else
+        {
+            printf("  ");
+            k=1;
+        }
+      }
+      printf("\n");
+   }
+}
+
+
+
+
+
+
+Questionn 9
+
+
+
+
+#include<stdio.h>
+int square(int);
+int main()
+{
+ int x;
+ printf("Enetr the number:- ");
+ scanf("%d",&x);
+ printf("Square is %d",square(x));
+}
+int square(int a)
+{
+  return (a*a);
+}
+
+
+
+Question  10
+
+
+#include<stdio.h>
+int factrol(int);
+int sum(int,int);
+int main()
+{
+  int x,sum=0,i;
+  printf("Enetr the number:- ");
+  scanf("%d",&x);
+for(i=1;i<=x;i++)
+{
+  sum=sum+factrol(i)/i;
+}
+printf("%d",sum);
+  return 0;
+
+}
+int factrol(int a)
+{
+  int i,b=1;
+  for(i=1;i<=a;i++)
+  {
+    b=b*i;
+  }
+  return (b);
+}
